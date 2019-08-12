@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center" style="border: double;" >
+    <form asp-controller="GiftCards" asp-action="Index" method="get">
+        <h1 class="display-4">Scan Card or Put Card Number</h1>
+        <input type="text" name="SearchString" />
+        <input type="submit" value="Search" />
+    </form>
+</div>
+
+<div>
+    <p style="text-align: center; font-size: 50px;">OR</p>
+</div>
+<div class="text-center" style="border: double;">
+    <a asp-controller="GiftCards" asp-action="Create">
+        Click to create a new Giftcard
+    </a>
+</div>
